@@ -1,0 +1,19 @@
+{
+  "name": "Use AWS credentials",
+  "id": "user-aws-credentials",
+  "version": "0.9.0",
+  "description": "Mounts local AWS .aws directory into container and adds configuration environment variables",
+  "mounts": [
+    "source=${localEnv:HOME}/.aws,target=/.aws,type=bind,readonly,consistency=cached"
+    // {
+    //     "source": "${localEnv:HOME}/.aws",
+    //     "target": "/.aws",
+    //     "type": "bind"
+    //     // ,readonly,consistency=cached"
+    // }
+  ],
+  "containerEnv": {
+    "AWS_CONFIG_FILE": "/.aws/config",
+    "AWS_SHARED_CREDENTIALS_FILE": "/.aws/credentials"
+  }
+}
