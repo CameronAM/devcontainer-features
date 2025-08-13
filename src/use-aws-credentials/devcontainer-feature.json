@@ -6,9 +6,10 @@
   "mounts": [
     // "source=${localEnv:HOME}/.aws,target=/.aws,type=bind,readonly,consistency=cached"
     {
+        "type": "bind",
         "source": "${localEnv:HOME}/.aws",
-        "target": "/.aws",
-        "type": "bind"
+        "target": "/.aws"
+        
         // ,readonly,consistency=cached"
     }
   ],
