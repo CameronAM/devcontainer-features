@@ -1,7 +1,7 @@
 
-# Hello, World! (hello)
+# Mount AWS Credentials
 
-A hello world feature
+Automatically mounts the ~/.aws directory into the container.
 
 ## Example Usage
 
