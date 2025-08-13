@@ -4,13 +4,10 @@
   "version": "0.9.0",
   "description": "Mounts local AWS .aws directory into container and adds configuration environment variables",
   "mounts": [
-    // "source=${localEnv:HOME}/.aws,target=/.aws,type=bind,readonly,consistency=cached"
     {
         "type": "bind",
         "source": "${localEnv:HOME}/.aws",
         "target": "/.aws"
-        
-        // ,readonly,consistency=cached"
     }
   ],
   "containerEnv": {
