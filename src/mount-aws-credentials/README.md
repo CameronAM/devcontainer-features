@@ -1,26 +1,20 @@
 
-# Mount AWS Credentials
+# Mount AWS credentials (mount-aws-credentials)
 
-Automatically mounts the ~/.aws directory into the container.
+Mounts local .aws directory into container and adds configuration environment variables to use mounted credentials.
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers/feature-starter/hello:1": {
-        "version": "latest"
-    }
+    "ghcr.io/CameronAM/devcontainer-features/mount-aws-credentials:0": {}
 }
 ```
 
-## Options
 
-| Options Id | Description | Type | Default Value |
-|-----|-----|-----|-----|
-| greeting | Select a pre-made greeting, or enter your own | string | hey |
 
 
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers/feature-starter/blob/main/src/hello/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/CameronAM/devcontainer-features/blob/main/src/mount-aws-credentials/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
